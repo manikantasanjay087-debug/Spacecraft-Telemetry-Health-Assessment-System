@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html
+<body>
+
+<div class="container">
+
+<h1>🚀 Spacecraft Telemetry Health Assessment</h1>
+
+<form action="/analyze" method="POST" enctype="multipart/form-data">
+
+    <h3>Upload Telemetry CSV</h3>
+
+    <input type="file" name="telemetry" accept=".csv" required>
+
+    <br><br>
+
+    <h3>Operator Note</h3>
+
+    <textarea
+        name="note"
+        rows="6"
+        cols="60"
+        placeholder="Enter operator observations..."
+        required></textarea>
+
+    <br><br>
+
+    <button type="submit">Analyze Spacecraft</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
